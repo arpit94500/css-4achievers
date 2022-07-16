@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes myball {
+            0%{
+                top: 0;
+                -webkit-animation-timing-function:ease-in ;
+            }
+            50%{
+                top:140px;
+                -webkit-animation-timing-function:ease-out ;
+            }
+            100%{
+                top: 0;
+                -webkit-animation-timing-function:ease-in ;
+            }
+        }
+        .ball{
+            height: 140px;
+            width: 140px;
+            background-color: red;
+            border-radius: 140px;
+            animation-name: myball;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            transform:translateY(0);
+            position: absolute;
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="ball">
+
+    </div>
+</body>
+</html>

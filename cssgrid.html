@@ -1,0 +1,45 @@
+<html>
+    <head>
+       <title>CSS GRID</title>
+       <style>
+        
+        div{
+            padding: 20px;
+            border: 1px solid black;
+        }
+        .head{
+            grid-area: header;
+        }
+        .footer{
+            grid-area: footer;
+        }
+        .m{
+            grid-area: menu;
+        }
+        .b{
+            grid-area: body;
+        }
+        .main{
+            display: grid;
+            background-color: aqua;
+            grid-template-areas: 'header header header header'
+            'menu body body body'
+            'menu footer footer footer'
+            ;
+            gap:20px;
+            padding: 20px;
+        }
+       
+       
+       </style> 
+    </head>
+    <body>
+        <div class="main">
+            <div class="head">Header</div>
+            <div class="m">Menu</div>
+            <div class="b">Body</div>
+            <div class="footer">Footer</div>
+
+        </div>
+    </body>
+</html>
