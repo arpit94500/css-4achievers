@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Units</title>
+        <style>
+           p{
+            color: red !important;
+           }
+           body{
+            counter-reset: xyz;
+           }
+           h1::before{
+            counter-increment: xyz;
+            content: "Class " counter(xyz) " is ";
+           }
+           
+        </style>
+    </head>
+    <body>   
+       <h2>Hey</h2>
+       <h1>Fireman</h1>
+       <h1>Hitman</h1>
+       <h1>gfy</h1>
+    </body>
+</html>
